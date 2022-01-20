@@ -1,0 +1,19 @@
+{
+  "superheroes": [
+      {
+          "id": "1",
+          "name": "Akki",
+          "alterEgo": "Akanksha"
+      },
+      {
+        "id": "2",
+        "name": "Abhi",
+        "alterEgo": "Abhishek"
+      },
+      {
+        "id": "3",
+        "name": "Ayu",
+        "alterEgo": "Ayush"
+      }
+    ]
+}
