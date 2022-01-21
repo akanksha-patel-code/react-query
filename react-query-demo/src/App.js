@@ -6,7 +6,10 @@ import { HomePage } from "./components/Home.page";
 import { RQSuperHeroesPage } from "./components/RQSuperHeroes.page";
 import { SuperHeroesPage } from "./components/SuperHeroes.page";
 import { RQSuperHeroPage } from "./components/RQSuperHero.page";
-import { ParellelQueriesPage } from "./components/ParellelQueries.page";
+import { DynamicParallelPage } from './components/DynamicParallel.page'
+import { DependentQueriesPage } from './components/DependentQueries.page'
+import { PaginatedQueriesPage } from './components/PaginatedQueries.page'
+import { InfiniteQueriesPage } from './components/InfiniteQueries.page'
 
 const queryClient = new QueryClient();
 
@@ -29,8 +32,17 @@ function App() {
             </ul>
           </nav>
           <Switch>
-          <Route path="/rq-parallel">
-              <ParellelQueriesPage />
+            <Route path='/rq-dynamic-parallel'>
+              <DynamicParallelPage heroIds={[1, 3]} />
+            </Route>
+            <Route path='/rq-dependent'>
+              <DependentQueriesPage email='akanksha@example.com' />
+            </Route>
+            <Route path='/rq-paginated'>
+              <PaginatedQueriesPage />
+            </Route>
+            <Route path='/rq-infinite'>
+              <InfiniteQueriesPage />
             </Route>
           <Route path="/rq-super-heroes/:heroId">
               <RQSuperHeroPage />
