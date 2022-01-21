@@ -15,5 +15,19 @@
         "name": "Ayu",
         "alterEgo": "Ayush"
       }
+    ],
+    "friends": [
+      {
+        "id": 1,
+        "name": "Chandler"
+      },
+      {
+        "id": 2,
+        "name": "Joey"
+      },
+      {
+        "id": 3,
+        "name": "Rachel"
+      }
     ]
 }
