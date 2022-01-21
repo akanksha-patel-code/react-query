@@ -7,7 +7,8 @@ const fetchSuperHeroes = () => {
 
 export const RQSuperHeroesPage = () => {
   const { isLoading, data, error, isError, isFetching } = useQuery("super-heroes", fetchSuperHeroes, 
-  { refetchOnWindowFocus: true });
+  { refetchInterval: 5000,
+    refetchIntervalInBackground: true });
 
   console.log({isLoading, isFetching})
 
